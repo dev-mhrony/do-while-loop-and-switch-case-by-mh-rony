@@ -13,7 +13,7 @@ void main() {
 
 // ------------------------------ Using Switch Case -----------------------------------------
 
-  stdout.write("What is your value?\r\n");
+  stdout.write("What is your value?\n");
   var value = stdin.readLineSync();
 
   switch (value) {
