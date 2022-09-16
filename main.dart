@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void main() {
   // ----------------------------Using Do While Loop ----------------------------------------
 
@@ -10,7 +12,10 @@ void main() {
   } while (n <= 17); // using requerment / Function
 
 // ------------------------------ Using Switch Case -----------------------------------------
-  String value = "a";
+
+  stdout.write("What is your value?\r\n");
+  var value = stdin.readLineSync();
+
   switch (value) {
     case "a":
       print('This is a "A"'); // if function is a match to print this
