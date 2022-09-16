@@ -13,7 +13,27 @@ void main() {
 
 // ------------------------------ Using Switch Case -----------------------------------------
 
-  stdout.write("What is your value?\n");
+  String input_value = "a";
+
+  switch (input_value) {
+    case "a":
+      print('This is a "A"'); // if function is a match to print this
+      break;
+    case "b":
+      print('This is a "B"'); // if function is a match to print this
+      break;
+    case "c":
+      print('This is a "C"'); // if function is a match to print this
+      break; // Program Break
+
+    default:
+      print(
+          "Doesn't Match The Input Value"); // if is a Doesn't Match to print this Value
+  }
+
+// ----------------------------------- Input Value--------------------------------------
+
+  stdout.write("Input your value?\n");
   var value = stdin.readLineSync();
 
   switch (value) {
